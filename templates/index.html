@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bitcoin Price Prediction</title>
+    <style>  
+        body  
+        {  
+        background-image:url("https://miro.medium.com/max/1838/1*o4pm4QDu0cwR1XEpLdFCSw.jpeg");  
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }  
+
+        </style>  
+</head>
+<body>
+    <center>
+    <h1 style="font-size:500%; color: bisque; " >Bitcoin Price Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict"> 
+        <label style="color:white; font-size: 200%; font-weight: bolder;">What is the price of Bitcoin Today :</label><br>
+        <p>     </p>
+        <input type="text" name="days"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+</center>
+</body>
+</html>
